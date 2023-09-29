@@ -1,0 +1,21 @@
+describe("speech pundit",()=>{
+    it("speechpundit login",()=>{
+        cy.visit("https://dev02.speechpundit.com")
+        cy.wait(5000);
+        cy.get('.d-none > .btn').click()
+        cy.get('.log').click()
+        cy.get(':nth-child(1) > .form-control').type("lakshmi.majjiga+coach123@applines.com")
+        cy.get(':nth-child(2) > .form-control').type("luckysai")
+       cy.get('[style="text-align: center;"] > .btn').type("{enter}")
+       cy.get('.dashboard-head > h2 > a').click()
+       cy.go('back').wait(2000)
+       cy.get('a > .card-img').click()
+       cy.go('back').wait(2000)
+       cy.get('.mb-0 > .col-lg-12 > .hover-img-scale-up > .g-0 > .col-lg > .card-img').click()
+       cy.get(':nth-child(3) > [href="/favorites"]').click()
+       cy.go('back')
+       cy.get('[href="/dashboards/activity"]').click()
+       cy.get('.btn').click().wait(2000)
+       cy.get('.cursor-pointer').click()
+    })
+})

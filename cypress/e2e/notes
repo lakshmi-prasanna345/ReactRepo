@@ -1,0 +1,78 @@
+locators
+
+selectors:
+
+cy.xpath(xpath locator)---->xpath selector
+cy.get( css locator)---->css selector
+
+css selector:
+
+tag id---------->#id syntax or tag#id
+tag class------->.class syntax or tag.class syntax
+tag attribute---->[attribute='value'] syntax or tag[attribute='value'] syntax
+tag class attribute(in all these tag is optional)----->.class[attribute='value'] syntax or tag.class[attribute='value'] syntax
+
+xpath:
+
+1)need to install cypress xpath plugin 
+2)add reference in cmds file if not then we have to add in every file using require
+///<reference types="Cypress" />
+///<reference types="cypress-xpath" /> like this we have to add reference
+3)now we need to add in e2e.js file  if not we need to write require in every file
+require('cypress-xpath')
+
+about xpath:
+XPath can be used to find and navigate through elements and attributes in an XML document.
+xpath stands for xml path language
+
+examples how to use xpath locators:
+
+cy.xpath(//ul[@id='homefeatured']/li)--->ul is main and li is sub
+cy.xpath(//ul[@id='homefeatured']).xpath('./li').should('have.length',7)
+note:get is for only css selectors and xpath is for xpath selectors
+---------------------------------------------------------------------------------------------
+ cypress assertions:
+
+ ---> what is assertions:validations --->comes from chi library
+ 1)implicit assertions or built-in assertions
+    a)should
+    b)and
+ 2)explicit assertions
+    a)expect
+    b)assert
+
+1)implicit assertions:
+   cy.url()should('include','orange.com')  
+   note:1)url will capture current page url
+        2) in should we need to pass 2  parameters
+        3)include is a one of the built in property of should
+   cy.url().should('eq','pass url')
+    note:1)here we are checking equality to this we need 'eq' property of the should.it check both 
+         are equal or not(captured url and visiting url)
+    cy.url().should('contain','orangehrm')
+    note:here we are are checking our url contain orangehrm or not.it works similar like include
+
+-----------------------------------------------------------------------------------------------------------
+traversal:
+
+parent() method for traversal:
+  cy.get(selector).parent().should(assertions)------->syntax
+parents():
+   cy.get(selector).parents().should(assertions)------>syntax
+parentsuntil():
+   cy.get(selector).find(selector).parentsuntil(selector).should(assertions)
+prev():
+    cy.get(selector).find(selector).prev().should(assertions)
+prevAll():
+    cy.get(selector).find(selector).prevAll().should(assertions)
+prevUntil():
+    cy.get(selector).find(selector).prevUntil().should(assertions)
+siblings():
+    cy.get(selector).siblings().should(assertions)
+childern():
+    cy.get(selector).children(selector).should(assertions)
+closest():
+    cy.get(selector).closest(selector).should(assertions)
+eq():
+cy.get(selector).eq(1).should(assertions) here 1 is like index 1 is returned
+------------------------------------------------------------------------------------------------------------
