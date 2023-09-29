@@ -1,0 +1,75 @@
+.side-bar{
+    width: 23%;
+    height: 1010px;
+    /* z-index: -1; */
+    /* position: fixed; */
+}
+.side-bar-icons{
+    background-color:rgb(80, 74, 75,0.12);
+}
+.side-card{
+    background-color:rgb(80, 74, 75,0.25);
+}
+.side-card p{
+    margin-top: 2px;
+}
+.side-bar-2{
+    background-color:rgb(80, 74, 75,0.12);
+}
+.data-bar{
+    background-color:rgb(80, 74, 75,0.12);
+    /* z-index: 50px; */
+    /* margin-left:25%; */
+    width: 78%;
+    /* margin-right:-400px; */
+    overflow: hidden;
+
+}
+
+.custom-card {
+    width: 11rem;
+    /* background-color:rgba(79, 60, 54, 0.5); */
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-card:hover {
+    background-color:rgba(14, 113, 179, 0.9);
+}
+
+.card-image {
+    height: 150px;
+    /* margin: auto; */
+    /* display: block; */
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color:#32cd32;
+    border-radius: 50%;
+    padding: 10px;
+    display: none;
+    /* color: black; */
+}
+
+.hovered .play-icon {
+    display: block;
+}
+
+
+.fixed{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    z-index:1500;
+    overflow-y: hidden;
+    padding: 20px;
+    /* background-color:rgb(54, 69, 79); */
+    /* background-color: ; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+}

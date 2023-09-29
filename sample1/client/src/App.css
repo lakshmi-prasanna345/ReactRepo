@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* 
+.GeeksForGeeks {
+  background-image:
+  url(
+   "https://images.pexels.com/photos/4016512/pexels-photo-4016512.jpeg?auto=compress&cs=tinysrgb&w=2000");
+  background-size: "cover"; 
+  height: 100vh;
+  margin-top: -70px;
+  font-size:50px;
+  background-repeat:no-repeat;
+  margin-top: 0px;
+} */
+.bgimage{
+  background-image:
+  url(
+   "https://media.istockphoto.com/id/1419288565/photo/spices-herbs-and-cooking-oil-border-flat-lay.jpg?s=2048x2048&w=is&k=20&c=gsrWP0YmmZdnPlRDIMAR8z7biYh1Ds1CNaR9ojgHDas=");
+  background-size: "cover"; 
+  height:105px;
+  width: 100%;
+  font-size: 30px;
+  background-repeat:no-repeat;
+  color: "red";
+}
+.bodyimage{
+  
+  background-image: url(
+    "https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=2000"
+  );
+  height: 98vh;
+  background-repeat:no-repeat;
+  background-size: "cover";
+  /* background-position: bottom; */
+  background-attachment: fixed;
+  margin-top: -8px;
+   
+}
+
+/* CSS file or in your component's style tag */
+.custom-modal {
+  max-width: 800px; /* Set your desired width */
+  max-height: 800px;/* Set your desired height */
+  
+}
+
+.form1{
+ 
+  height: 500px;
+  margin-left: 800px;
+}
+.texthover h1:hover{
+ font-size:45px;
+ color: green;
+}
+.des{
+  height:200px;
+}
+.loginform{
+  height: 400px;
+  width:500px;
+  /* background-color: azure; */
+  margin-left:600px;
+  margin-top: 140px;
+  transition: 0.5s;
+  /* background: rgba(76, 175, 80, 0.3);  */
+  box-shadow: 1px 1px 1px 2px #C6C6C6;
+}
+.loginform:hover{
+  height: 410px;
+  width: 510px;
+}
+.signup{
+  margin-left: 50px;
+  transition: 0.3s;
+}
+.signup:hover{
+  height: 40px;
+  width: 90px;
+  background-color: green;
+}
+.login:hover{
+  height: 40px;
+  width: 70px;
+  background-color: green;
+}
+.login{
+  margin-left: 130px;
+}
+.check{
+  margin-left: 65px;
+}
+.loginheading{
+  margin-top: 10px;
+  margin-left: 200px;
+  font-size: 30px;
+  color: green;
+}
+
+.form-group{
+  margin-top: 30px;
+  width: 70%;
+  margin-left: 65px;
+  transition:0.5s;
+  border-radius: 10px;
+}
+
+.form-group:hover{
+  border: 5px solid rgb(35, 183, 24);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

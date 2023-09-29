@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.cards{
+  height: 70px;
+  border:1px solid black;
+  width: 300px;
+ position: absolute; 
+ border-radius: 15px;
+ transform-origin: 0% 30%;
+ transition:4s;
+}
+.div1{
+  display: inline;
+  position: relative;
+  
+}
+.text{
+  stroke-dasharray: 4000f;
+  animation: 2s;
+  background-color: aqua;
+-webkit-text-stroke: 0vw green;
+  font-size: 60px;
+  animation: animate 6s linear infinite;
+  border-right: 2px solid green;
+  overflow: hidden;
+}
+.ani1{
+  transform:rotate3d(1,1,1,45deg);
+  transition: transform 9s;
+}
+.ani2{
+  transform: rotate(15deg);
+  transition:transform 9s;
+}
+@keyframes animate{
+  0%,10%,50%{
+      width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
+}
+/* @keyframes typing{
+  0%{
+    stroke-dashoffset: 4000;
+  }
+  50%{
+    stroke-dashoffset: 2000;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+} */
+.parent{
+  margin-left: 300px;
+  /* position: relative; */
+  /* transition:5s; */
+  
+}
+.text{
+  animation:3s fillsvg linear;
+  stroke-dasharray: 3000;
+}
+body{
+  background-color: black;
+}
+@keyframes fillsvg{
+  0%{
+stroke-dashoffset: 3000;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+/* .parent div{
+  
+transition:5s;
+} */
+
+/* .card1
+{
+  transform:rotate(340deg);
+ 
+  transition-duration:  transform 6s;
+}
+.card2{
+  transform: rotate(348deg);
+  transition-duration: 6s;
+}
+.card3{
+  transform: rotate(350deg);
+  transition-duration: 6s;
+}
+.card4{
+  transform: rotate(346deg);
+}
+.card5{
+  transform: rotate(343deg);
+}
+.card6{
+  transform: rotate(342deg); */
+/* }
+.start{
+  transform: rotate(22deg);
+  /* margin-bottom: 70px; */
+
+/* } */ 
