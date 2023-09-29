@@ -1,0 +1,22 @@
+<html>
+    <body>
+        
+<script>
+    function getAllSubsets(input) {
+      const result = [];
+  
+      for (let i = 0; i < input.length; i++) {
+        for (let j = i + 1; j <= input.length; j++) {
+          result.push(input.slice(i, j));
+        }
+      }
+  
+      return result;
+    }
+  
+    const inputString = prompt("enter the string");
+    const subsets = getAllSubsets(inputString);
+    console.log(subsets);
+  </script>
+  </body>
+  </html>

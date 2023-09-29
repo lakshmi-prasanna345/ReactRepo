@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <a id="a" href="#" rel="html" hreflang="en" target="_self">link</a>
+        <p id="p"></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <button type="button" id="btn">click</button>
+        <script>
+            var btn=document.getElementById("btn");
+            var para=document.getElementById("p");
+            var para=document.getElementById("p1");
+            var para=document.getElementById("p2");
+            var para=document.getElementById("p3");
+            var l=document.getElementById("a");
+           btn.addEventListener("click",function(){
+            p.innerText=l.href;
+            p1.innerText=l.rel;
+            p2.innerText=l.hreflang;
+            p3.innerText=l.target;
+           })
+        </script>
+    </body>
+</html>

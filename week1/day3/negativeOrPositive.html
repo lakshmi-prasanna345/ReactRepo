@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>positive or negative</h1>
+        <button onclick="negOrPos()">click here</button>
+        <p id="p"></p>
+        <script>
+           function negOrPos(){
+                const a=prompt("enter the number");
+                if(a>0){
+                    document.getElementById("p").innerText="positive";
+                }
+                else if(a<0){
+                    document.getElementById("p").innerText="negative";
+                }
+                else{
+                    document.getElementById("p").innerText="zero";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            table,tr,td{
+                border: 1px solid blue;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <table id="myTable">
+            <tr>
+            <td>lucky</td>
+            <td>n180351</td>
+            </tr>
+            <tr>
+            <td>sai</td>
+            <td>n180351</td>
+            </tr>
+            <tr>
+                <td>gayathri</td>
+                <td>n180678</td>
+                </tr>
+                <tr>
+                <td>teja</td>
+                <td>n180815</td>
+                </tr>
+        </table>
+
+        <script>
+        function updateCellContents() {
+            var row=parseInt(prompt("enter the row number"));
+            var column=parseInt(prompt("enter the column number"));
+            var content=prompt("enter the content to be updated");
+            var table = document.getElementById("myTable");
+            var rows = table.getElementsByTagName("tr");
+        
+            if (row >= 0 && row < rows.length) {
+            var cells = rows[row].getElementsByTagName("td");
+            if (column >= 0 && column < cells.length) {
+                cells[column].innerText = content;
+            } else {
+                console.error("Column index out of range");
+            }
+            } else {
+            console.error("Row index out of range");
+            }
+        }
+        
+        // Example Usage
+        updateCellContents();
+        </script>
+  </body>
+  </html>
+  

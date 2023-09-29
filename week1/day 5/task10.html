@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+            <p id="p">
+                The link text is the text that <a class="a" href="#">www.google.com</a> you want to appear within the paragraph, that a visitor will click on.
+
+                In the following sentence the words <a class="a" href="#">www.google.com</a>are the link text..
+                
+                The quick brown fox jumps over the lazy dog"
+            </p>
+            <button type="button" onmouseover="bold()">click</button>
+        <script>
+            function bold(){
+                var link1=document.getElementsByClassName("a");
+                 for (let index = 0; index < link1.length; index++) {
+                        link1[index].style.fontWeight="bolder";
+                        link1[index].style.backgroundColor="red";
+                 }
+            }
+        </script>
+    </body>
+</html>

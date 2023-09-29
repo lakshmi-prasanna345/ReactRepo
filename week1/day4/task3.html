@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="firstname" id="fname">
+            <input type="text" placeholder="lastname" id="lname">
+            <button type="button" onclick="values()">click</button>
+        </form>
+        <script>
+            
+            function values (){
+                var fn=document.getElementById("fname").value;
+                var ln=document.getElementById("lname").value;
+                console.log(fn);
+                console.log(ln);
+            }
+        </script>
+    </body>
+</html>

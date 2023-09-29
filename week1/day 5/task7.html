@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <select id="dropdown">
+            <option value="html" class="option">html</option>
+            <option value="js" class="option">js</option>
+            <option value="css" class="option">css</option>
+        </select>
+        <button  id="btn" type="button" onclick="remove()">click</button>
+        <script>
+            function remove(){
+                var dropdown=document.getElementById("dropdown");
+                btn.addEventListener("click",function(){
+                    dropdown.remove(dropdown.selectedIndex);
+                }) 
+            }
+
+        </script>
+    </body>
+</html>

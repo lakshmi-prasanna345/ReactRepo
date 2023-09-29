@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="r" placeholder="enter the radius">
+         <p id="radius"></p>
+        <button type="button" id="btn" onclick="sphere()">click</button>
+        <script>
+           function sphere(){
+            var radius=document.getElementById("r").value;
+            var para=document.getElementById("radius");
+             var cal=4/3*3.16*radius;
+             para.innerText=cal;
+           }
+
+        </script>
+    </body>
+</html>

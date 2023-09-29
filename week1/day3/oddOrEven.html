@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>even or odd</h1>
+        <button onclick="fun()">click here</button>
+        <p id="p"></p>
+        <script>
+            function fun(){
+                const a=prompt("enter the number");
+               if(a%2==0){
+               document.getElementById("p").innerText="EVEN";
+               }
+               else{
+                document.getElementById("p").innerText="ODD";
+               }
+            }
+        </script>
+    </body>
+</html>

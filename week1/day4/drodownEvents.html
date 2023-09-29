@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dropdown Events Example</title>
+</head>
+<body>
+  <select id="myDropdown">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+  <button type="button" id="btn">submit</button>
+  <ul id="radiob">
+    <li><input type="radio" id="1" name="radio" value="html">html</li>
+   <li><input type="radio" id="2" name="radio" value="css">css</li>
+    <button type="button" id="btn2">submit</button></li>
+  </ul>
+  <script>
+    var dropdown=document.getElementById("myDropdown");
+    var btn=document.getElementById("btn");
+    btn.addEventListener("click",function(){
+            var drop=dropdown.value;
+            console.log(drop)
+    }
+    )
+    var rad=document.getElementsByName("radio");
+    var btn2=document.getElementById("btn2");
+    btn2.addEventListener("click",function(){
+        for(let i=0;i<rad.length;i++){
+            if(rad[i].checked){
+                console.log(rad[i].value);
+            }
+        }
+    })
+  </script>
+</body>
+</html>

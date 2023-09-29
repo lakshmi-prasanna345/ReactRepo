@@ -1,0 +1,15 @@
+<html>
+    <body id="body">
+        <button type="button" id="btn">click</button>
+        <div id="div"></div>
+        <script>
+           var Images=["<img src='img2.jpeg'>","<img src='img3.jpeg'>","<img src='img4.jpeg'>","<img src='img7.jpeg'>","<img src='img8.jpeg'>","<img src='img9.jpeg'>","<img src='img10.jpeg'>","<img src='img11.jpeg'>","<img src='img6.jpeg'>","<img src='img5.jpeg'>"];
+           var btn=document.getElementById("btn");
+           var div1=document.getElementById("div");
+           btn.addEventListener("click",function(){
+            var output=(Math.floor(Math.random()*10));
+            div1.innerHTML=Images[output];
+           })
+        </script>
+    </body>
+</html>
